@@ -84,7 +84,18 @@ body, html {
 <!-- Work Section -->
 <div class="w3-container" id="work">
   <div class="w3-row-padding" style="margin-top:164px">
-  
+      <div class="w3-col l3 m6"><h3>Front</h3>
+      <img src="https://raw.githubusercontent.com/eugoregon/carsfolder/d20f0a9315ab5515c2a0c47990b2250814039ef1/mazda/mazda3front.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Front">
+    </div>
+    <div class="w3-col l3 m6"><h3>Left</h3>
+      <img src="https://raw.githubusercontent.com/eugoregon/carsfolder/d20f0a9315ab5515c2a0c47990b2250814039ef1/mazda/mazda3left.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Left">
+    </div>
+    <div class="w3-col l3 m6"><h3>Right</h3>
+      <img src="https://raw.githubusercontent.com/eugoregon/carsfolder/d20f0a9315ab5515c2a0c47990b2250814039ef1/mazda/mazda3right.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Right">
+    </div>
+    <div class="w3-col l3 m6"><h3>Rear</h3>
+      <img src="https://raw.githubusercontent.com/eugoregon/carsfolder/d20f0a9315ab5515c2a0c47990b2250814039ef1/mazda/mazda3rear.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rear">
+    </div>
   </div>
 
   
@@ -101,29 +112,23 @@ body, html {
 <!-- Skills Section -->
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
-    
-  
-  <h1 class="text-light mb-5"> Thank you for your submission</h1>
-  <p class="text-light"> It appears there is some damage on your car. Contact a GetGo assistant to verify. </p>
-  <table class="table-bordered text-light" style="width:100%">
-  <tr>
-    <th>Rank</th>
-    <th>Class</th>
-    <th>Probability</th>
-  </tr>
-  <tr>
-    <td>Most Likely:</td>
-    <td>{{ predictions.class1 }}</td>
-    <td>{{ predictions.prob1 }}</td>
-  </tr>
-  <tr>
-    <td>2nd Most Likely:</td>
-    <td>{{ predictions.class2 }}</td> <td>{{ predictions.prob2 }}</td> </tr> <tr>
-    </tr>
-  </table> <a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
-
-      
-      
+    <div class="w3-col m6">
+      <h3>Complete your GetGo Car Booking</h3>
+        <p>GetGo requires all customers to upload a before and after pictures of each car being rented. Please refer to these 4 angles that you are required to upload before you can start driving.</p>
+      <p>You have booked a Mazda 3 for 7th September 2022 from 9am to 12pm from GetGo Car.<br>The vehicle number is SLP3459W<br><br>
+Please upload the required 4 images one at a time. </p>
+      <p>We will require you to upload 4 images with the same angles upon return of the vehicle.<br> Please upload images less than 500kb in size for these 4 angles.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Upload one picture at a time</p>
+     <form method=post enctype=multipart/form-data>
+     <p class="text-light">
+        <input type=file name=file>
+        <input type=submit value=Upload>
+     </p>
+  </form>
+     
+    </div>
   </div>
 </div>
 
