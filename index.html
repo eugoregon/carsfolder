@@ -12,50 +12,156 @@
   });
 </script>
 
-<!doctype html> <html> <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Bootslander Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="/86AAF7CD-A199-463A-BEEF-AEE7400B3F0D/main.js?attr=1ImoYgFQYjqythw40r3_BjAPpetg5QQvFI6A65aW-wacp822eHRkEp3xV9aHBfHK6IEbd36P2my8MIRQQFkZjBka_d5cNwNxZk9yaFhhtmE" charset="UTF-8"></script><style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Bootslander - v4.8.2
-  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
 </head>
-    <title>Classify your Image!</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head> <body style="background-color:black"> <div id="maintext" 
-style="position:absolute; margin:auto; width:700px; height:200px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
-  <h1 class="text-light mb-2"> Upload your image to be classified! </h1>
-  <h4 class="text-light mb-5">(Please upload images less than 500kb in size)</h4>
-  <form method=post enctype=multipart/form-data>
-     <p class="text-light">
-        <input type=file name=file>
-        <input type=submit value=Upload>
-     </p>
-  </form> </div> </body>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" background-color="black" id="myNavbar">
+    <img src="https://raw.githubusercontent.com/eugoregon/carsfolder/00ee146c7a337a96ba9434b7049b79b48f7af647/mazda/getgo.jpg" alt="A drone">
+    <!-- Right-sided navbar links -->
+    <div background-color="black" class="w3-right w3-hide-small">
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Upload Image</a>
+      <a href="https://getgo.sg/" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact GetGo</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Upload Image</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Work Section -->
+<div class="w3-container" id="work">
+  <div class="w3-row-padding" style="margin-top:164px">
+  
+  </div>
+
+  
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    
+  
+  <h1 class="text-light mb-5"> Thank you for your submission</h1>
+  <p class="text-light"> It appears there is some damage on your car. Contact a GetGo assistant to verify. </p>
+  <table class="table-bordered text-light" style="width:100%">
+  <tr>
+    <th>Rank</th>
+    <th>Class</th>
+    <th>Probability</th>
+  </tr>
+  <tr>
+    <td>Most Likely:</td>
+    <td>{{ predictions.class1 }}</td>
+    <td>{{ predictions.prob1 }}</td>
+  </tr>
+  <tr>
+    <td>2nd Most Likely:</td>
+    <td>{{ predictions.class2 }}</td> <td>{{ predictions.prob2 }}</td> </tr> <tr>
+    </tr>
+  </table> <a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
+
+      
+      
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#work" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
 </html>
